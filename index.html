@@ -3,12 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sussy Compeition :)</title>
+    <title>F1 Racing</title>
+
+    <link rel="icon" href="Assets/images/red-bull-rb19-2.jpg">
 
     <link rel="stylesheet" href="index.css">
     <script src="app.js" defer></script>
 </head>
 <body>
-    
+    <header>
+        <nav class="navigation">
+            <ul class="nav-links">
+                <li><button onclick="document.querySelector('#RB19').scrollIntoView({behavior: 'smooth'});">RB19</button></li>
+                <li><button onclick="document.querySelector('#Specs').scrollIntoView({behavior: 'smooth'});">Specs</button></li>
+                <li><button onclick="document.querySelector('#Design').scrollIntoView({behavior: 'smooth'});">Design</button></li>
+                <li><button onclick="document.querySelector('#ChangePit').scrollIntoView({behavior: 'smooth'});">Change Pit</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to F1 racing!</h1>
+
+        <div id="RB19", class="DisplayBox"> 
+            <h2>RB19</h2>
+            <p>
+                The Red Bull Racing RB19 is a Formula One car designed and constructed by Red Bull Racing competing in 
+                the 2023 Formula One World Championship.
+            </p>
+
+            <img onmouseenter="CycleRB19()" id="RB19-ROLL-OVER" src="Assets/images/max-verstappen-red-bull-rb19-bahrain-test-planetf1.jpg" alt="">
+
+            <button onclick="ReadMoreRB19()" class="ReadMoreButton">Read More</button>
+        </div>
+
+        <div id="Specs" class="DisplayBox"> 
+            <h2>Specifactions</h2>
+            <h3>click each fact to reveal a new one!</h3>
+
+            <ul>
+                <li onclick="FadeInSpec(0)">Electric</li>
+                <li onclick="FadeInSpec(1)">motor</li>
+                <li onclick="FadeInSpec(2)">Honda kinetic and thermal energy recovery systems</li>
+                <li onclick="FadeInSpec(3)">Battery Honda lithium-ion batteries</li>
+                <li onclick="FadeInSpec(4)">Fuel Exxon/Esso (Exxon for US race only in 2021) Synergy and Mobile High Performance Unleaded (Mexican race only in 2021) 94.25% gasoline + 5.75% bio fuel</li>
+                <li onclick="FadeInSpec(5)">Number of cylinders 6</li>
+                <li onclick="FadeInSpec(6)">Number of valves 4 per cylinder</li>
+                <li onclick="FadeInSpec(7)">Oil Mobil 1</li>
+                <li onclick="FadeInSpec(8)">Capacity 1,600cc</li>
+                <li onclick="FadeInSpec(9)">Vee angle 90-degrees</li>
+                <li onclick="FadeInSpec(10)">Weight 150kg</li>
+                <li onclick="FadeInSpec(11)">Max RPM 15,000RPM</li>
+                <li>Power output 900HP</li>
+            </ul> 
+
+            <!-- <button onclick="" class="ReadMoreButton">Show More</button> -->
+        </div>
+        
+        <div id="Design" class="DisplayBox"> 
+            <h2>Design & Areodynamics</h2>
+            <p>
+                This year, it's once again the sidepods that first grab the attention not through a major overhaul, but by 
+                setting new standards for how extreme they are.
+            </p>
+
+
+            <button onclick="ReadMoreDesign()" class="ReadMoreButton">Read More</button>
+        </div>
+
+        <div id="ChangePit" class="DisplayBox"> 
+            <h2>Change pit World record</h2>
+            <p>
+                The pit crew changed all of the four tyres of Lando Noris car in 1.80 magical seconds. He went on finish first in that Grand Prix. Red Bull also beat their previous world record pit-stop time of 1.80 seconds.
+            </p>
+
+            <img id="ChangePit-ROLL-OVER" src="Assets/images/red-bull-racing-rb19-1.jpg" alt="">
+
+
+            <!-- <button onclick="" class="ReadMoreButton">Read More</button> -->
+        </div>
+    </main>
+
+
+    <footer>
+
+    </footer>
 </body>
 </html>

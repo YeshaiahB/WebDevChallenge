@@ -4,7 +4,168 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.7);
 
+    text-align: center;
+    transition: 0.5s;
+}
+
+body:hover {
+    background-image: url(Assets/images/max-verstappen-red-bull-racing-1.webp);
+    transition: 0.5s;
+}
+
+h1 {
+    color: white;
+    animation: reveal 2s forwards;
+}
+
+.navigation {
     text-align: center;
 }
 
+
+.nav-links {
+    display: inline-block;
+    margin: 0;
+    padding: 20px;
+    list-style-type: none;
+}
+
+.nav-links li {
+    float: left;
+    padding: 10px;
+}
+
+.nav-links button {
+    color: rgb(197, 189, 189);
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+
+    background: none;
+    display: inline-block;
+    padding: 5px;
+
+    min-width: 15%;
+    min-height: 45px;
+    width: auto;
+    height: auto;
+
+    text-align: center;
+    align-content: center;
+
+    transition: 0.5s;
+}
+
+.nav-links button:hover {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    
+    transition: 0.5s;
+}
+
+
+.ReadMoreButton {
+    display: inline-block;
+    background-color: rgb(200, 16, 46);
+    color: white;
+
+    border: 2px, solid, black;
+    border-radius: 5px;
+
+    min-width: 20%;
+    min-height: 3vh;
+
+    width: auto;
+    height: auto;
+
+    max-width: 30%;
+
+    margin-bottom: 10px;
+}
+
+.DisplayBox {
+    display: inline-block;
+    background-color: rgb(41, 38, 38);
+    color: white;
+
+    border: 2px, solid, black;
+    border-radius: 5px;
+
+    min-width: 40%;
+    min-height: 10vh;
+
+    width: auto;
+    height: auto;
+
+    max-width: 50%;
+
+    margin-bottom: 30px;
+}
+
+.DisplayBox img {
+    border: 1px, solid, black;
+    border-radius: 10px;
+
+    max-width: 80%;
+    height: auto;
+
+    transition: 0.5s;
+
+    margin-bottom: 10px;
+}
+
+#Specs ul {
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
+
+    list-style: none;
+    margin-left: 13%;
+}
+
+#Specs ul li {
+    cursor: pointer;
+    margin: 10px 0;
+    width: 80%;
+
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#Specs ul li:hover {
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+/* Automatic Scrolling */
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Compatibility with smaller screen sizes */
+@media (max-width: 800px) {
+    body {
+        background-image: url(Assets/images/BackgroundMobile.jpg);
+        transition: 0.5s;
+    }
+
+    body:hover {
+        background-image: url(Assets/images/BackroundMobileHover.webp);
+        transition: 0.5s;
+    }
+}
