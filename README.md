@@ -1,1 +1,1 @@
-This is a simple web page - created for a web design contest at Bedford College.
+I was required to develop a single web page about F1 race car.
